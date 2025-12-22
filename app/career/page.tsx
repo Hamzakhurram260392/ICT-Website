@@ -1,0 +1,201 @@
+"use client";
+
+import React from "react";
+
+// ----------------------------------------------------
+// --- BENEFITS DATA ---
+// ----------------------------------------------------
+
+const benefitItems = [
+  {
+    icon: (props: any) => (
+      <svg {...props} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+          d="M17 20h5v-5a3 3 0 00-3-3H9a3 3 0 00-3 3v5H1V7a3 3 0 013-3h16a3 3 0 013 3v13zM9 4v2m6-2v2M10 9h4" />
+      </svg>
+    ),
+    text: "Supportive Team",
+    details: "Collaboration and respect are at the heart of everything we do.",
+  },
+  {
+    icon: (props: any) => (
+      <svg {...props} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+          d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
+    ),
+    text: "Growth Opportunities",
+    details: "We invest in your learning and professional development.",
+  },
+  {
+    icon: (props: any) => (
+      <svg {...props} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+          d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" />
+      </svg>
+    ),
+    text: "Flexibility That Works",
+    details: "Hybrid, remote, or in-office — we support how you work best.",
+  },
+  {
+    icon: (props: any) => (
+      <svg {...props} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+          d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2h-3v5h6" />
+      </svg>
+    ),
+    text: "Competitive Benefits",
+    details: "From health coverage to paid time off, we’ve got you covered.",
+  },
+  {
+    icon: (props: any) => (
+      <svg {...props} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682" />
+      </svg>
+    ),
+    text: "Inclusive Environment",
+    details: "Diversity and inclusion aren’t just values — they’re actions.",
+  },
+];
+
+// ----------------------------------------------------
+// --- HERO SECTION ---
+// ----------------------------------------------------
+
+const CareerCompanionHeroSection = () => {
+  return (
+    <section className="bg-gray-100 py-24 px-6">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+
+        <div className="space-y-6">
+          <p className="text-sm font-semibold text-green-600 uppercase">
+            — Career Companion
+          </p>
+
+          <h1 className="text-5xl font-extrabold">
+            <span className="text-indigo-900">Your Partner in Building a </span>
+            <span className="text-green-500">Confident Career</span>
+          </h1>
+
+          <p className="text-lg text-gray-700 max-w-md">
+            At ICT, we empower graduates with skills, confidence, and real-world experience.
+          </p>
+
+          <button className="px-8 py-3 bg-indigo-700 text-white rounded-lg font-semibold">
+            Join ICT
+          </button>
+        </div>
+
+        <div className="h-[450px] rounded-3xl overflow-hidden shadow-2xl">
+          <img
+            src="https://images.unsplash.com/photo-1593132791838-b78f8c2b535d"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+// ----------------------------------------------------
+// --- STRUGGLES SECTION (IMAGE LEFT | TEXT RIGHT) ---
+// ----------------------------------------------------
+
+const StrugglesSection = () => {
+  return (
+    <section className="bg-white py-24 px-6">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16">
+
+        <div className="space-y-8">
+          <img
+            src="https://images.unsplash.com/photo-1552664730-d307ca884978"
+            className="rounded-2xl shadow-xl"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1549419266-9e9d6904664c"
+            className="rounded-2xl shadow-xl"
+          />
+        </div>
+
+        <div>
+          <p className="text-sm font-semibold text-green-600 uppercase">
+            — Career Companion
+          </p>
+
+          <h2 className="text-3xl font-extrabold text-indigo-900 mt-2">
+            Why Many Graduates Struggle After University
+          </h2>
+
+          <ul className="mt-6 space-y-3 text-lg text-gray-800">
+            <li>❌ Weak CVs & cover letters</li>
+            <li>❌ Lack of mentorship</li>
+            <li>❌ Low interview confidence</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+// ----------------------------------------------------
+// --- BENEFITS SECTION (TEXT LEFT | IMAGE RIGHT) ---
+// ----------------------------------------------------
+
+const BenefitsSection = () => {
+  return (
+    <section className="bg-gray-50 py-24 px-6">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+
+        <div className="space-y-6">
+          <p className="text-sm font-semibold text-green-600 uppercase">
+            — Career Companion
+          </p>
+
+          <h2 className="text-3xl font-extrabold text-indigo-900">
+            How ICT Helps You Succeed
+          </h2>
+
+          {benefitItems.map((item, i) => (
+            <div key={i} className="flex gap-4">
+              <div className="w-12 h-12 bg-indigo-100 border-2 border-indigo-300 rounded-full flex items-center justify-center">
+                {item.icon({ className: "w-6 h-6 text-indigo-700" })}
+              </div>
+              <div>
+                <p className="font-semibold">{item.text}</p>
+                <p className="text-sm text-gray-600">{item.details}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+         {/* RIGHT IMAGES */}
+          <div className="relative w-full h-[420px]">
+            {/* TOP IMAGE */}
+            <div className="absolute top-0 right-0 w-[70%] h-[260px] bg-gray-200 rounded-2xl shadow-md"></div>
+
+            {/* BOTTOM IMAGE */}
+            <div className="absolute bottom-0 left-0 w-[75%] h-[280px] bg-gray-300 rounded-2xl shadow-md"></div>
+
+          </div>
+
+      </div>
+    </section>
+  );
+};
+
+// ----------------------------------------------------
+// --- FINAL PAGE ---
+// ----------------------------------------------------
+
+export default function CareerStrugglesAndBenefitsPage() {
+  return (
+    <div className="min-h-screen bg-white">
+      <CareerCompanionHeroSection />
+      <StrugglesSection />
+      <BenefitsSection />
+    </div>
+  );
+}
