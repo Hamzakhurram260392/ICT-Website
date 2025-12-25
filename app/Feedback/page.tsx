@@ -11,13 +11,13 @@ export default function ICTPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: Form Card */}
           <div className="bg-white rounded-3xl shadow-2xl p-10 lg:p-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Find Your <span className="text-green-600">Class Information</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#3D4098] mb-4">
+              Find Your Class <span className="text-green-600"> Information</span>
             </h2>
             <p className="text-gray-600 mb-8">
               Complete the form to receive course, fee, and batch information.
             </p>
-            <div className="w-20 h-1 bg-green-600 mb-10"></div>
+            <div className="w-90 h-1 ml-10 -mt-5 bg-green-600 mb-10"></div>
 
             <form className="space-y-8">
               {/* Name */}
@@ -97,10 +97,10 @@ export default function ICTPage() {
           {/* RIGHT IMAGES - Placeholder (you can replace with actual images later) */}
           <div className="relative w-full h-[420px]">
             {/* TOP IMAGE */}
-            <div className="absolute top-0 left-0 w-[70%] h-[260px] bg-gray-200 rounded-2xl shadow-md"></div>
+            <div className="absolute top-0 left-0 w-[65%] h-[260px] shadow-md"><img src="40.png" alt="" /></div>
 
             {/* BOTTOM IMAGE */}
-            <div className="absolute bottom-0 right-0 w-[75%] h-[280px] bg-gray-300 rounded-2xl shadow-md"></div>
+            <div className="absolute -bottom-14 -right-6 w-[65%] h-[280px] shadow-md"><img src="41.png" alt="" /></div>
           </div>
         </div>
       </section>
@@ -129,9 +129,9 @@ export default function ICTPage() {
           <div className="relative flex flex-col items-center">
             <div className="relative mb-6">
               {/* Triangle Frame - Gradient from blue to teal */}
-              <svg width="220" height="220" viewBox="0 0 220 220" className="absolute inset-0">
+              <svg width="270" height="280" viewBox="0 0 220 220" className="absolute inset-0 -m-6 rotate-45 rounded-3xl">
                 <path
-                  d="M110 10 L200 190 L20 190 Z"
+                  d="M110 10 L200 190 L5 190 Z"
                   fill="none"
                   stroke="url(#triangleGradient)"
                   strokeWidth="12"
@@ -145,12 +145,12 @@ export default function ICTPage() {
                 </defs>
               </svg>
               {/* Student Image Placeholder */}
-              <div className="w-48 h-64 bg-gray-200 rounded-lg"></div>
+              <div className="w-48 h-64 pt-2 rounded-lg z-10 relative"><img src="42.png" alt="" /></div>
             </div>
             {/* Name Badge */}
-            <div className="bg-gradient-to-r from-green-500 to-blue-700 text-white px-6 py-3 rounded-full shadow-lg flex items-center gap-3 font-semibold">
+            <div className="bg-gradient-to-r from-[#15A959] to-[#3D4098] text-white px-6 py-3 -mt-10 z-10 rounded-full shadow-lg flex items-center gap-3 font-semibold">
               Dilip Kumar
-              <div className="w-8 h-8 bg-white/30 rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
                 <span className="text-lg">▶</span>
               </div>
             </div>
@@ -159,7 +159,7 @@ export default function ICTPage() {
           {/* Student 2 - Waqas Muhammad */}
           <div className="relative flex flex-col items-center">
             <div className="relative mb-6">
-              <svg width="220" height="220" viewBox="0 0 220 220" className="absolute inset-0">
+              <svg width="270" height="280" viewBox="0 0 220 220" className="absolute inset-0 -m-6 rotate-45 rounded-3xl">
                 <path
                   d="M110 10 L200 190 L20 190 Z"
                   fill="none"
@@ -174,11 +174,11 @@ export default function ICTPage() {
                   </linearGradient>
                 </defs>
               </svg>
-              <div className="w-48 h-64 bg-gray-200 rounded-lg"></div>
+              <div className="w-48 h-64 pt-2 rounded-lg z-10 relative"><img src="42.png" alt="" /></div>
             </div>
-            <div className="bg-gradient-to-r from-green-500 to-blue-700 text-white px-6 py-3 rounded-full shadow-lg flex items-center gap-3 font-semibold">
+            <div className="bg-gradient-to-r from-[#15A959] to-[#3D4098] text-white px-6 py-3 rounded-full -mt-10 z-10  shadow-lg flex items-center gap-3 font-semibold">
               Waqas Muhammad
-              <div className="w-8 h-8 bg-white/30 rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
                 <span className="text-lg">▶</span>
               </div>
             </div>
@@ -187,7 +187,7 @@ export default function ICTPage() {
           {/* Student 3 - Asma Hashmi */}
           <div className="relative flex flex-col items-center">
             <div className="relative mb-6">
-              <svg width="220" height="220" viewBox="0 0 220 220" className="absolute inset-0">
+             <svg width="270" height="280" viewBox="0 0 220 220" className="absolute inset-0 -m-6 rotate-45 rounded-3xl">
                 <path
                   d="M110 10 L200 190 L20 190 Z"
                   fill="none"
@@ -202,11 +202,11 @@ export default function ICTPage() {
                   </linearGradient>
                 </defs>
               </svg>
-              <div className="w-48 h-64 bg-gray-200 rounded-lg"></div>
+              <div className="w-48 h-64 pt-2 rounded-lg z-10 relative"><img src="42.png" alt="" /></div>
             </div>
-            <div className="bg-gradient-to-r from-green-500 to-blue-700 text-white px-6 py-3 rounded-full shadow-lg flex items-center gap-3 font-semibold">
+            <div className="bg-gradient-to-r from-[#15A959] to-[#3D4098] text-white px-6 py-3 rounded-full shadow-lg -mt-10 z-10  flex items-center gap-3 font-semibold">
               Asma Hashmi
-              <div className="w-8 h-8 bg-white/30 rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
                 <span className="text-lg">▶</span>
               </div>
             </div>
@@ -215,7 +215,7 @@ export default function ICTPage() {
           {/* Student 4 - Maryam Khan */}
           <div className="relative flex flex-col items-center">
             <div className="relative mb-6">
-              <svg width="220" height="220" viewBox="0 0 220 220" className="absolute inset-0">
+             <svg width="270" height="280" viewBox="0 0 220 220" className="absolute inset-0 -m-6 rotate-45 rounded-3xl">
                 <path
                   d="M110 10 L200 190 L20 190 Z"
                   fill="none"
@@ -230,11 +230,11 @@ export default function ICTPage() {
                   </linearGradient>
                 </defs>
               </svg>
-              <div className="w-48 h-64 bg-gray-200 rounded-lg"></div>
+              <div className="w-48 h-64 pt-2 rounded-lg z-10 relative"><img src="42.png" alt="" /></div>
             </div>
-            <div className="bg-gradient-to-r from-green-500 to-blue-700 text-white px-6 py-3 rounded-full shadow-lg flex items-center gap-3 font-semibold">
+            <div className="bg-gradient-to-r from-[#15A959] to-[#3D4098] text-white px-6 py-3 rounded-full shadow-lg -mt-10 z-10  flex items-center gap-3 font-semibold">
               Maryam Khan
-              <div className="w-8 h-8 bg-white/30 rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
                 <span className="text-lg">▶</span>
               </div>
             </div>
@@ -243,7 +243,7 @@ export default function ICTPage() {
           {/* Student 5 - M. Osama Arshad Ali */}
           <div className="relative flex flex-col items-center">
             <div className="relative mb-6">
-              <svg width="220" height="220" viewBox="0 0 220 220" className="absolute inset-0">
+            <svg width="270" height="280" viewBox="0 0 220 220" className="absolute inset-0 -m-6 rotate-45 rounded-3xl">
                 <path
                   d="M110 10 L200 190 L20 190 Z"
                   fill="none"
@@ -258,11 +258,11 @@ export default function ICTPage() {
                   </linearGradient>
                 </defs>
               </svg>
-              <div className="w-48 h-64 bg-gray-200 rounded-lg"></div>
+              <div className="w-48 h-64 pt-2 rounded-lg z-10 relative"><img src="42.png" alt="" /></div>
             </div>
-            <div className="bg-gradient-to-r from-green-500 to-blue-700 text-white px-6 py-3 rounded-full shadow-lg flex items-center gap-3 font-semibold">
+            <div className="bg-gradient-to-r from-[#15A959] to-[#3D4098] text-white px-6 py-3 rounded-full shadow-lg -mt-10 z-10  flex items-center gap-3 font-semibold">
               M. Osama Arshad Ali
-              <div className="w-8 h-8 bg-white/30 rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
                 <span className="text-lg">▶</span>
               </div>
             </div>
@@ -271,7 +271,7 @@ export default function ICTPage() {
           {/* Student 6 - Alina Wakeel */}
           <div className="relative flex flex-col items-center">
             <div className="relative mb-6">
-              <svg width="220" height="220" viewBox="0 0 220 220" className="absolute inset-0">
+             <svg width="270" height="280" viewBox="0 0 220 220" className="absolute inset-0 -m-6 rotate-45 rounded-3xl">
                 <path
                   d="M110 10 L200 190 L20 190 Z"
                   fill="none"
@@ -286,11 +286,11 @@ export default function ICTPage() {
                   </linearGradient>
                 </defs>
               </svg>
-              <div className="w-48 h-64 bg-gray-200 rounded-lg"></div>
+             <div className="w-48 h-64 pt-2 rounded-lg z-10 relative"><img src="42.png" alt="" /></div>
             </div>
-            <div className="bg-gradient-to-r from-green-500 to-blue-700 text-white px-6 py-3 rounded-full shadow-lg flex items-center gap-3 font-semibold">
+            <div className="bg-gradient-to-r from-[#15A959] to-[#3D4098] text-white px-6 py-3 rounded-full shadow-lg -mt-10 z-10  flex items-center gap-3 font-semibold">
               Alina Wakeel
-              <div className="w-8 h-8 bg-white/30 rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
                 <span className="text-lg">▶</span>
               </div>
             </div>
@@ -300,7 +300,7 @@ export default function ICTPage() {
 
         {/* Read More Button */}
         <div className="text-center mt-12">
-          <button className="px-8 py-4 bg-blue-700 text-white font-semibold rounded-full shadow-lg hover:bg-blue-800 transition">
+          <button className="px-10 py-3  bg-[#3D4098] text-white font-semibold rounded-md shadow-lg transition">
             Read More
           </button>
         </div>

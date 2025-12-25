@@ -5,8 +5,8 @@ import Link from "next/link";
 
 // ================= COURSE DATA =================
 const courses = [
-  { title: "UK TAXATION", image: "UK.png", link: "#", flag: "🇬🇧", description: "Understand UK tax rules with expert-led professional guidance." },
-  { title: "USA TAXATION", image: "USA.png", link: "#", flag: "🇺🇸", description: "Master complex US tax laws and compliance procedures." },
+  { title: "UK TAXATION", image: "UK.png", link: "/courses/uk-taxation", flag: "🇬🇧", description: "Understand UK tax rules with expert-led professional guidance." },
+  { title: "USA TAXATION", image: "USA.png", link: "/courses/us-taxation", flag: "🇺🇸", description: "Master complex US tax laws and compliance procedures." },
   { title: "UAE TAXATION", image: "UAE.png", link: "#", flag: "🇦🇪", description: "Get clarity on UAE VAT, Corporate Tax, and regulations." },
   { title: "SAUDI TAXATION", image: "SAUDI.png", link: "#", flag: "🇸🇦", description: "Explore Saudi Arabia’s Zakat, VAT, and Income Tax." },
   { title: "CERTIFIED TAX ADVISOR", image: "fbr.png", link: "#", flag: "📜", description: "Become a certified tax consultant." },
@@ -72,7 +72,7 @@ const CoursesHeroSection = () => (
 
 // ================= COURSE CARD (SIMPLE GRID VERSION) =================
 const SimpleCourseCard = ({ course }: any) => (
-  <Link href={course.link} className="group block">
+  <Link href={`/courses/${course.slug}`} className="group block">
     <div className="relative rounded-xl overflow-hidden shadow-lg bg-white">
       <div className="relative h-[220px]">
         <img src={course.image} alt={course.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />

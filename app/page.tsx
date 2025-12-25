@@ -30,7 +30,9 @@ export default function Home() {
           <a className="py-3 px-12 border-[#3D4098] border-3 text-[#3D4098] font-bold text-xl rounded-lg" href="">Explore</a>
           </div>
           </div> 
-        <div>helloo</div>
+        <div className="flex justify-center ml-40"><img className="h-[500px] w-[300px] " src="h1.png" alt="" />
+        <img className="h-[200px] w-[200px] " src="t1.png" alt="" />
+        <img className="h-[270px] w-[270px] mt-50 -ml-48 " src="28.png" alt="" /></div>
 
       </div>
 
@@ -149,9 +151,9 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
 
         {/* Left Image */}
-        <div className="relative overflow-hidden rounded-2xl rotate-[-3deg] shadow-lg">
+        <div className="relative overflow-hidden rounded-2xl -rotate-3 shadow-lg">
           <img
-            src="/campus-1.jpg"
+            src="/h2.png"
             alt="Campus Session"
             className="w-full h-[360px] object-cover"
           />
@@ -160,16 +162,16 @@ export default function Home() {
         {/* Center Image */}
         <div className="relative overflow-hidden rounded-2xl shadow-2xl scale-105">
           <img
-            src="/campus-2.jpg"
+            src="/h3.png"
             alt="ICT Campus Group"
             className="w-full h-[420px] object-cover"
           />
         </div>
 
         {/* Right Image */}
-        <div className="relative overflow-hidden rounded-2xl rotate-[3deg] shadow-lg">
+        <div className="relative overflow-hidden rounded-2xl rotate-3 shadow-lg">
           <img
-            src="/campus-3.jpg"
+            src="/pic1.png"
             alt="Campus Faculty"
             className="w-full h-[360px] object-cover"
           />
@@ -180,7 +182,7 @@ export default function Home() {
   </div>
 
 {/* Who Will You Learn About Section */}
-<div className="relative overflow-hidden py-24 bg-gradient-to-r from-[#EAF3FF] via-[#E6FBF5] to-white">
+<div className="relative overflow-hidden py-24 bg-linear-to-r from-[#EAF3FF] via-[#E6FBF5] to-white">
 
   {/* Wave Lines Background */}
   <div className="absolute bottom-0 left-0 w-full">
@@ -208,7 +210,7 @@ export default function Home() {
     {/* Right Content */}
     <div>
       <div className="flex items-center gap-2 mb-4">
-        <span className="w-10 h-[2px] bg-[#15A959]"></span>
+        <span className="w-10 h-0.5 bg-[#15A959]"></span>
         <p className="text-[#3D4098] font-bold uppercase">At ICT</p>
       </div>
 
@@ -227,7 +229,7 @@ export default function Home() {
 
 
 {/* Testimonials Section */}
-<div className="relative py-28 overflow-hidden bg-gradient-to-br from-[#F1F5FF] via-[#ECFBF6] to-white">
+<div className="relative py-28 overflow-hidden bg-linear-to-br from-[#F1F5FF] via-[#ECFBF6] to-white">
 
   {/* Decorative Circle */}
   <div className="absolute right-[-200px] top-10 w-[500px] h-[500px] bg-[#3D4098] rounded-full opacity-90"></div>
@@ -237,7 +239,7 @@ export default function Home() {
     {/* Left Content */}
     <div>
       <div className="flex items-center gap-2 mb-4">
-        <span className="w-10 h-[2px] bg-[#15A959]"></span>
+        <span className="w-10 h-0.5 bg-[#15A959]"></span>
         <p className="text-[#3D4098] font-semibold">
           Trusted by Learners
         </p>
@@ -387,10 +389,6 @@ export default function Home() {
       <h1 className="text-4xl font-bold flex justify-center">Stay Ahead in Tax & Finance</h1>
       <img className="mt-3" src="pic3.png" alt="" />
     </div>
-
-  
-
-
     </div>
   );
 }

@@ -8,8 +8,6 @@ import { MdCallEnd } from "react-icons/md";
 import { RiMapPinLine } from "react-icons/ri";
 
 
-
-
 export default function ICTPage() {
   return (
     <div className="w-full min-h-screen bg-white text-black font-sans">
@@ -41,7 +39,7 @@ export default function ICTPage() {
         <div><img className="h-96 w-72 mt-44" src="pic4.png" alt="" /></div>
         <div><img className="h-84 w-72 mt-20 -ml-8" src="pic5.png" alt="" /></div>
 
-        <div className="absolute bottom-22 right-100 bg-green-600 text-white rounded-xl px-6 py-6 shadow-lg">
+        <div className="absolute -bottom-7 right-50 bg-green-600 text-white rounded-xl px-6 py-6 shadow-lg">
               <p className="flex items-center text-xl gap-2 font-semibold">
                <span className="text-3xl"><TiTick /></span> Sharpen Your Skills
               </p>

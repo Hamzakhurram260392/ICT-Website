@@ -2,10 +2,6 @@
 
 import React from "react";
 
-// ----------------------------------------------------
-// --- BENEFITS DATA ---
-// ----------------------------------------------------
-
 const benefitItems = [
   {
     icon: (props: any) => (
@@ -69,12 +65,12 @@ const CareerCompanionHeroSection = () => {
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
 
         <div className="space-y-6">
-          <p className="text-sm font-semibold text-green-600 uppercase">
+          <p className="text-sm font-semibold text-[#3D4098] uppercase">
             — Career Companion
           </p>
 
           <h1 className="text-5xl font-extrabold">
-            <span className="text-indigo-900">Your Partner in Building a </span>
+            <span className="text-[#3D4098]">Your Partner in Building a </span>
             <span className="text-green-500">Confident Career</span>
           </h1>
 
@@ -82,14 +78,14 @@ const CareerCompanionHeroSection = () => {
             At ICT, we empower graduates with skills, confidence, and real-world experience.
           </p>
 
-          <button className="px-8 py-3 bg-indigo-700 text-white rounded-lg font-semibold">
+          <button className="px-8 py-3 bg-[#3D4098] text-white rounded-lg font-semibold">
             Join ICT
           </button>
         </div>
 
         <div className="h-[450px] rounded-3xl overflow-hidden shadow-2xl">
           <img
-            src="https://images.unsplash.com/photo-1593132791838-b78f8c2b535d"
+            src="47.png"
             className="w-full h-full object-cover"
           />
         </div>
@@ -113,10 +109,6 @@ const StrugglesSection = () => {
             src="https://images.unsplash.com/photo-1552664730-d307ca884978"
             className="rounded-2xl shadow-xl"
           />
-          <img
-            src="https://images.unsplash.com/photo-1549419266-9e9d6904664c"
-            className="rounded-2xl shadow-xl"
-          />
         </div>
 
         <div>
@@ -124,9 +116,10 @@ const StrugglesSection = () => {
             — Career Companion
           </p>
 
-          <h2 className="text-3xl font-extrabold text-indigo-900 mt-2">
+          <h2 className="text-5xl font-extrabold text-gray-600 mt-2">
             Why Many Graduates Struggle After University
           </h2>
+          <p className="mt-5 text-xl">Despite their qualifications, many African graduates <br></br> face significant challenges when transitioning <br></br> from university to the workplace across the continent.</p>
 
           <ul className="mt-6 space-y-3 text-lg text-gray-800">
             <li>❌ Weak CVs & cover letters</li>
@@ -150,13 +143,7 @@ const BenefitsSection = () => {
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
 
         <div className="space-y-6">
-          <p className="text-sm font-semibold text-green-600 uppercase">
-            — Career Companion
-          </p>
-
-          <h2 className="text-3xl font-extrabold text-indigo-900">
-            How ICT Helps You Succeed
-          </h2>
+          
 
           {benefitItems.map((item, i) => (
             <div key={i} className="flex gap-4">
@@ -172,12 +159,12 @@ const BenefitsSection = () => {
         </div>
 
          {/* RIGHT IMAGES */}
-          <div className="relative w-full h-[420px]">
+          <div className="relative w-full mb-26 h-[420px]">
             {/* TOP IMAGE */}
-            <div className="absolute top-0 right-0 w-[70%] h-[260px] bg-gray-200 rounded-2xl shadow-md"></div>
+            <div className="absolute top-0 right-0 w-[70%] h-[260px] rounded-2xl"><img src="49.png" alt="" /></div>
 
             {/* BOTTOM IMAGE */}
-            <div className="absolute bottom-0 left-0 w-[75%] h-[280px] bg-gray-300 rounded-2xl shadow-md"></div>
+            <div className=" absolute bottom-0 -left-4 w-[75%] h-[280px] rounded-2xl \"><img className="m-15" src="48.png" alt="" /></div>
 
           </div>
 
