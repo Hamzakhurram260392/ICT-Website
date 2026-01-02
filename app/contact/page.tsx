@@ -240,7 +240,7 @@ export default function CompleteContactPage() {
               </div>
 
               {/* Submit Button */}
-              <button type="submit" className="w-full py-3 bg-indigo-700 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-800 transition">
+              <button type="submit" className="w-full py-3 bg-[#3D4098] text-white font-semibold rounded-lg shadow-md  transition">
                 Send Message
               </button>
             </form>

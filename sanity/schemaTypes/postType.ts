@@ -32,5 +32,40 @@ export const postType = defineType({
       type: 'array',
       of: [{type: 'block'}],
     }),
+    {
+  name: "seo",
+  title: "SEO",
+  type: "object",
+  fields: [
+    {
+      name: "metaTitle",
+      title: "Meta Title",
+      type: "string",
+    },
+    {
+      name: "metaDescription",
+      title: "Meta Description",
+      type: "text",
+      rows: 3,
+    },
+    {
+      name: "keywords",
+      title: "Keywords",
+      type: "array",
+      of: [{ type: "string" }],
+    },
+    {
+      name: "ogImage",
+      title: "Open Graph Image",
+      type: "image",
+    },
+    {
+      name: "noIndex",
+      title: "No Index",
+      type: "boolean",
+      initialValue: false,
+    },
+  ],
+}
   ],
 })

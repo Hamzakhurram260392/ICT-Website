@@ -6,7 +6,19 @@
 // import {postType} from './postType'
 
 // export const schemaTypes = [postType]
-import {postType} from './postType'
+// import {postType} from './postType'
 
-export const schemaTypes = [postType]
+// export const schemaTypes = [postType]
 
+// sanity/schemaTypes/index.ts
+import mentor from "./mentor"; 
+import { postType } from "./postType";
+import seo from "./seo";
+import course from "./course";
+
+export const schemaTypes = [
+  postType,
+  mentor, 
+    seo,
+    course,
+];

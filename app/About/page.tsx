@@ -14,7 +14,6 @@ export default function ICTPage() {
       
       {/* HERO SECTION */}
    
-       {/* Hero Section */}
       <div className="flex justify-start px-28 py-10 gap-10">
 
         <div>

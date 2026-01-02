@@ -87,7 +87,7 @@ export default function ICTPage() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full py-4 bg-indigo-700 text-white font-semibold rounded-lg shadow-lg hover:bg-indigo-800 transition duration-300"
+                className="w-full py-4 bg-[#3D4098] text-white font-semibold rounded-lg shadow-lg hover:bg-[#3D4098] transition duration-300"
               >
                 Submit
               </button>
